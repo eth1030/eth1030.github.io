@@ -1,0 +1,9 @@
+<header>
+  <nav>
+    <ul style="list-style: none; display: flex; gap: 20px;">
+      {% for item in site.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

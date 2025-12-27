@@ -1,0 +1,25 @@
+title: Your Blog Name
+description: Short description of your blog
+url: "https://eth1030.github.io"
+
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-feed
+
+author:
+  name: Emika Hammond
+  email: eth@bu.edu
+
+github_username: eth1030
+
+# Navigation menu
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/

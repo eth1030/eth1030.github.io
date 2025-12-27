@@ -1,0 +1,13 @@
+<article style="margin-bottom: 2rem; text-align: center;">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <small>{{ post.date | date: "%B %d, %Y" }}</small>
+  
+    {% if post.image %}
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 0.5rem;">
+    {% endif %}
+  
+    {% if post.caption %}
+      <p style="margin-top: 0.5rem; font-style: italic;">{{ post.caption }}</p>
+    {% endif %}
+  </article>
+  

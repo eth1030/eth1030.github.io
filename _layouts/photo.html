@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; max-width: 100px; margin: auto; padding: 1rem; text-align: center; }
+    img { max-width: 100%; height: auto; border-radius: 8px; }
+    p.caption { font-style: italic; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>{{ page.title }}</h1>
+
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+
+  {% if page.caption %}
+    <p class="caption">{{ page.caption }}</p>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</body>
+</html>
